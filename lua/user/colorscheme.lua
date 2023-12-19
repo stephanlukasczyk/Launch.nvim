@@ -1,12 +1,12 @@
 local M = {
-  "LunarVim/primer.nvim",
+  "nordtheme/vim",
   lazy = false, -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
-  commit = "b8d7e08eed9a61eb2f49b9196b01f7f2932735ff",
+  commit = "f13f5dfbb784deddbc1d8195f34dfd9ec73e2295",
 }
 
 function M.config()
-  vim.cmd.colorscheme "primer_dark"
+  vim.cmd.colorscheme "nord"
 end
 
 return M

@@ -28,11 +28,11 @@ vim.opt.cursorline = true -- highlight the current line
 vim.opt.number = true -- set numbered lines
 vim.opt.laststatus = 3
 vim.opt.showcmd = false
-vim.opt.ruler = false
+vim.opt.ruler = true
 vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column, otherwise it would shift the text each time
-vim.opt.wrap = false -- display lines as one long line
+vim.opt.wrap = true -- display lines as one long line
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
@@ -51,3 +51,12 @@ vim.cmd [[set iskeyword+=-]]
 
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
+
+vim.opt.autoread = true -- Automatically reload if the file changes externally
+vim.opt.listchars = { tab = "▸ ", trail = "·" } -- Show relevant white spaces
+vim.opt.incsearch = true -- Make search behave like in modern browsers
+vim.opt.magic = true -- For regular expressions, turn on magic
+vim.opt.showmatch = true -- Show matching brackets when cursor is over
+vim.opt.textwidth = 80 -- Set line break to 80 characters
+vim.opt.breakindent = true -- Visualise breaks with an indent
+vim.opt.autoindent = true -- Automatically indenting
