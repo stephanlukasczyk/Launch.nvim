@@ -187,6 +187,7 @@ function M.config()
       { name = "treesitter" },
       { name = "crates" },
       { name = "tmux" },
+      { name = "orgmode" },
     },
     confirm_opts = {
       behavior = cmp.ConfirmBehavior.Replace,
