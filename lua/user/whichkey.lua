@@ -1,7 +1,7 @@
 local M = {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  commit = "ce741eb559c924d72e3a67d2189ad3771a231414",
+  commit = "370ec46f710e058c9c1646273e6b225acf47cbed",
 }
 
 function M.config()
@@ -149,10 +149,11 @@ function M.config()
   -- NOTE: Prefer using : over <cmd> as the latter avoids going back in normal-mode.
   -- see https://neovim.io/doc/user/map.html#:map-cmd
   local vmappings = {
-    ["/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" },
-    l = {
-      name = "LSP",
-      a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+    {
+      mode = { "v" },
+      { "<leader>/", "<Plug>(comment_toggle_linewise_visual)", desc = "Comment toggle linewise (visual)", nowait = true, remap = false },
+      { "<leader>l", group = "LSP", nowait = true, remap = false },
+      { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code Action", nowait = true, remap = false },
     },
   }
 

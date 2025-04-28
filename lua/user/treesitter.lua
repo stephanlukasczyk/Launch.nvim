@@ -1,28 +1,28 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
   event = { "BufReadPost", "BufNewFile" },
-  commit = "afa103385a2b5ef060596ed822ef63276ae88016",
+  commit = "684eeac91ed8e297685a97ef70031d19ac1de25a",
   build = ":TSUpdate",
   dependencies = {
     {
       "nvim-treesitter/nvim-treesitter-textobjects",
       event = "VeryLazy",
-      commit = "78c49ca7d2f7ccba2115c11422c037713c978ad1",
+      commit = "205e3369bc83d8cb83f7409c36120e24611f8c5c",
     },
     {
       "JoosepAlviste/nvim-ts-context-commentstring",
       event = "VeryLazy",
-      commit = "92e688f013c69f90c9bbd596019ec10235bc51de",
+      commit = "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f",
     },
     {
       "windwp/nvim-ts-autotag",
       event = "VeryLazy",
-      commit = "6be1192965df35f94b8ea6d323354f7dc7a557e4",
+      commit = "a1d526af391f6aebb25a8795cbc05351ed3620b5",
     },
     {
       "windwp/nvim-autopairs",
       event = "InsertEnter",
-      commit = "f6c71641f6f183427a651c0ce4ba3fb89404fa9e",
+      commit = "4d74e75913832866aa7de35e4202463ddf6efd1b",
     },
   },
 }
@@ -45,11 +45,6 @@ function M.config()
     },
 
     autotag = { enable = true },
-
-    context_commentstring = {
-      enable = true,
-      enable_autocmd = false,
-    },
 
     autopairs = { enable = true },
 
@@ -85,6 +80,10 @@ function M.config()
         },
       },
     },
+  }
+
+  require("ts_context_commentstring").setup {
+    enable_autocmd = false,
   }
 
   -- local configs = require "nvim-treesitter.configs"

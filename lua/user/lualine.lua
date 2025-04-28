@@ -1,6 +1,6 @@
 local M = {
   "nvim-lualine/lualine.nvim",
-  commit = "7533b0ead663d80452210c0c089e5105089697e5",
+  commit = "15884cee63a8c205334ab13ab1c891cd4d27101a",
 }
 
 function M.config()

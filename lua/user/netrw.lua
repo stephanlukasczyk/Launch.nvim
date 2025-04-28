@@ -1,7 +1,7 @@
 local M = {
   "prichrd/netrw.nvim",
   event = "VeryLazy",
-  commit = "596435bd2f5b0162b86c97ca8244e2b0862d3a4a",
+  commit = "90501c62b9b816ed3ed1e912ae9db9af5671a1b2",
 }
 
 function M.config()

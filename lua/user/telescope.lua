@@ -1,7 +1,7 @@
 local M = {
   "nvim-telescope/telescope.nvim",
   dependencies = { { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true } },
-  commit = "74ce793a60759e3db0d265174f137fb627430355",
+  commit = "a4ed82509cecc56df1c7138920a1aeaf246c0ac5",
   lazy = true,
   cmd = "Telescope",
 }

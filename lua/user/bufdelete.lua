@@ -1,7 +1,7 @@
 local M = {
   "famiu/bufdelete.nvim",
   event = "VeryLazy",
-  commit = "07d1f8ba79dec59d42b975a4df1c732b2e4e37b4",
+  commit = "f6bcea78afb3060b198125256f897040538bcb81",
 }
 
 function M.config()

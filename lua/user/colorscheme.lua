@@ -6,7 +6,10 @@ local M = {
 }
 
 function M.config()
-  vim.cmd.colorscheme "nord"
+  -- vim.cmd.colorscheme "nord"
+  -- syntax enable
+  -- set number
+  vim.cmd.colorscheme "lucario"
 end
 
 return M

@@ -1,11 +1,11 @@
 local M = {
   "rhysd/committia.vim",
-  commit = "a187b8633694027ab5ef8a834527d33093282f95",
+  commit = "c8c0f255e8090ed90dd9d5dd2e8672994f8e3671",
   event = { "BufReadPre", "BufAdd", "BufNew", "BufReadPost" },
   dependencies = {
     {
       "tpope/vim-fugitive",
-      commit = "59659093581aad2afacedc81f009ed6a4bfad275",
+      commit = "4a745ea72fa93bb15dd077109afbb3d1809383f2",
     },
   },
 }

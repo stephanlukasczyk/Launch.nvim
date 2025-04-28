@@ -1,7 +1,7 @@
 local M = {
   "LukasPietzschmann/telescope-tabs",
   event = "VeryLazy",
-  commit = "801425bd19d3fb511ef477bf44a1f99b82419a9c",
+  commit = "9ca0800d4e9c2610d5cac4d121cde0d9fbd89a64",
 }
 
 function M.config()

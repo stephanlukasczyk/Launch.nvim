@@ -1,7 +1,7 @@
 local M = {
   "windwp/nvim-autopairs",
   event = "InsertEnter",
-  commit = "f6c71641f6f183427a651c0ce4ba3fb89404fa9e",
+  commit = "4d74e75913832866aa7de35e4202463ddf6efd1b",
 }
 
 M.config = function()

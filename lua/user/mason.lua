@@ -1,6 +1,6 @@
 local M = {
   "williamboman/mason-lspconfig.nvim",
-  commit = "e7b64c11035aa924f87385b72145e0ccf68a7e0a",
+  commit = "1a31f824b9cd5bc6f342fc29e9a53b60d74af245",
   dependencies = {
     "williamboman/mason.nvim",
     "nvim-lua/plenary.nvim",

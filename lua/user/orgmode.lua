@@ -1,6 +1,6 @@
 local M = {
   "nvim-orgmode/orgmode",
-  commit = "c60cf77031a5a9a3c590c6f7b876bc7117603e57",
+  commit = "27ab1cf9e7ae142f9e9ffb218be50dd920f04cb3",
   event = "VeryLazy",
   dependencies = {
     {

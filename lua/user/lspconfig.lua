@@ -1,11 +1,11 @@
 local M = {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
-  commit = "e49b1e90c1781ce372013de3fa93a91ea29fc34a",
+  commit = "8b0f47d851ee5343d38fe194a06ad16b9b9bd086",
   dependencies = {
     {
-      "folke/neodev.nvim",
-      commit = "b094a663ccb71733543d8254b988e6bebdbdaca4",
+      "folke/lazydev.nvim",
+      commit = "2367a6c0a01eb9edb0464731cc0fb61ed9ab9d2c",
     },
   },
 }
@@ -108,7 +108,7 @@ function M.config()
     end
 
     if server == "lua_ls" then
-      require("neodev").setup {}
+      require("lazydev").setup {}
     end
 
     lspconfig[server].setup(opts)

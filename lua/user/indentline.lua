@@ -1,7 +1,7 @@
 local M = {
   "lukas-reineke/indent-blankline.nvim",
   event = "VeryLazy",
-  commit = "9637670896b68805430e2f72cf5d16be5b97a22a",
+  commit = "005b56001b2cb30bfa61b7986bc50657816ba4ba",
 }
 
 function M.config()

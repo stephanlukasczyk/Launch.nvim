@@ -1,7 +1,7 @@
 local M = {
   "RRethy/vim-illuminate",
   event = "VeryLazy",
-  commit = "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86",
+  commit = "1fa4b23409e22a03823648e344c77f260e2572cb",
 }
 
 function M.config()
